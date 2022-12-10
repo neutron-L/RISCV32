@@ -1,0 +1,19 @@
+## A Computer Organization and Design Program Assignment
+Specific requirements and details can be found in the pdf.
+The reference book is Computer Organization and Design: The Hardware/Software Interface
+ProjA_TC.zip has five test cases, including instruction files and data memory files, as well as the expected output (pipeline processor runs test cases output results may vary somewhat with the implementation, but the contents of the final register file should be the same)
+## Parameter
+to compile the source file:
+```bash
+> make
+```
+it will output the executable file named cpu.
+to run cpu, the parameter **ioDir** must be given, which  specifies the path containing the instruction file and the data memory file.
+```
+> ./cpu <ioDir>
+```
+The program will run the program in the given instruction file and save the relevant output information to the relevant file (in the ioDir directory) using a non-pipelined processor and a pipelined processor, respectively.
+
+## Document
+The report.docx contains the answers to the five questions in the pdf. RV32I.doc is a truth table and control signal acquisition method related to the decoding design of the processor.
+The RV32I.py file includes the python framework code, and you can also try to implement both processors using python.
